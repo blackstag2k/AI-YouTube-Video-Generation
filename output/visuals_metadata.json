@@ -1,0 +1,30 @@
+{
+    "topic": "The Science Behind Morning Coffee",
+    "total_videos": 3,
+    "videos": [
+        {
+            "path": "output\\assets\\video_1.mp4",
+            "id": 6201697,
+            "width": 1920,
+            "height": 1080,
+            "duration": 16,
+            "url": "https://www.pexels.com/video/woman-pouring-a-filtered-cup-of-ground-coffee-6201697/"
+        },
+        {
+            "path": "output\\assets\\video_2.mp4",
+            "id": 16705067,
+            "width": 1920,
+            "height": 1080,
+            "duration": 16,
+            "url": "https://www.pexels.com/video/4k-video-with-a-cup-of-coffee-at-the-morning-devotional-16705067/"
+        },
+        {
+            "path": "output\\assets\\video_3.mp4",
+            "id": 34084796,
+            "width": 1920,
+            "height": 1080,
+            "duration": 37,
+            "url": "https://www.pexels.com/video/man-preparing-instant-coffee-in-kitchen-34084796/"
+        }
+    ]
+}

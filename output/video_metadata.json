@@ -1,0 +1,7 @@
+{
+    "output_file": "output\\final_video.mp4",
+    "resolution": "1920x1080",
+    "fps": 30,
+    "duration_seconds": 65.2,
+    "num_video_clips": 3
+}
