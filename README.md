@@ -37,7 +37,7 @@ Generate complete, YouTube-ready videos with script, voiceover, visuals, thumbna
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.11.9
 - [Gemini API key](https://aistudio.google.com/app/apikey) (free)
 - [Pexels API key](https://www.pexels.com/api/) (free)
 
@@ -79,24 +79,40 @@ Wait 3-5 minutes, and your complete video package will be in the `output/` folde
 ---
 
 ## 📁 Project Structure
-```
-ai-video-generator/
-├── main.py                          # Complete pipeline (all-in-one)
-├── requirements.txt                 # Python dependencies
-├── PROMPTS.md                       # All AI prompts used
-├── README.md                        # This file
-└── output/                          # Generated files (created on first run)
-    ├── script.json                  # Generated script
-    ├── voiceover.mp3                # AI voiceover
-    ├── final_video.mp4              # Final video ⭐
-    ├── thumbnail.jpg                # YouTube thumbnail
-    ├── subtitles.srt                # Subtitle file
-    ├── seo_metadata.json            # SEO data
-    ├── YOUTUBE_UPLOAD_INSTRUCTIONS.txt
-    └── assets/
-        ├── video_1.mp4              # Stock footage
-        ├── video_2.mp4
-        └── video_3.mp4
+```mermaid
+graph TD
+    A[ai-video-generator/] --> B[main.py]
+    A --> C[requirements.txt]
+    A --> D[PROMPTS.md]
+    A --> E[README.md]
+    A --> F[.gitignore]
+    A --> G[output/]
+    
+    G --> H[script.json]
+    G --> I[script.txt]
+    G --> J[voiceover.mp3]
+    G --> K[final_video.mp4]
+    G --> L[thumbnail.jpg]
+    G --> M[subtitles.srt]
+    G --> N[seo_metadata.json]
+    G --> O[voice_metadata.json]
+    G --> P[visuals_metadata.json]
+    G --> Q[video_metadata.json]
+    G --> R[subtitles_metadata.json]
+    G --> S[youtube_upload_guide.json]
+    G --> T[YOUTUBE_UPLOAD_INSTRUCTIONS.txt]
+    G --> U[assets/]
+    
+    U --> V[video_1.mp4]
+    U --> W[video_2.mp4]
+    U --> X[video_3.mp4]
+    
+    style A fill:#e1f5ff
+    style B fill:#fff59d
+    style G fill:#c8e6c9
+    style K fill:#ff9800,color:#fff
+    style L fill:#ff9800,color:#fff
+    style M fill:#ff9800,color:#fff
 ```
 
 ---
@@ -105,7 +121,7 @@ ai-video-generator/
 
 | Component | Tool | Why |
 |-----------|------|-----|
-| Script Generation | Google Gemini 2.0 Flash | Fast, free, high-quality content |
+| Script Generation | Google Gemini 2.5 Flash | Fast, free, high-quality content |
 | Text-to-Speech | Edge TTS | Free, natural voices, no API key |
 | Stock Videos | Pexels API | Free high-quality footage |
 | Video Assembly | MoviePy | Python video editing library |
@@ -219,12 +235,12 @@ This project was created for an AI automation assignment with the following requ
 
 ### Tools Used
 
-- **Gemini 2.0 Flash** - Script and SEO generation (free 15 RPM)
+- **Gemini 2.5 Flash** - Script and SEO generation (free 15 RPM)
 - **Edge TTS** - Text-to-speech (free, unlimited)
 - **Pexels API** - Stock video footage (free 200 requests/hour)
 - **MoviePy** - Video editing and assembly
 - **Pillow (PIL)** - Image processing for thumbnails
-- **Python 3.9** - Core programming language
+- **Python 3.11.9** - Core programming language
 
 ### Biggest Challenge
 
@@ -280,7 +296,7 @@ MIT License - feel free to use for learning, projects, or commercial work.
 
 ---
 
-## 🙏 Acknowledgments
+## 🙏 AI and Site Details
 
 - **Anthropic Claude** - AI assistance in development
 - **Google Gemini** - Script and SEO generation
@@ -289,20 +305,10 @@ MIT License - feel free to use for learning, projects, or commercial work.
 
 ---
 
-## 📞 Contact
+## 📞 Details
 
-Created by [Your Name]
+Created by Bhaskar Rana
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: @blackstag2k(https://github.com/yourusername)
+- Email: ranaji2k@gmail.com
 
----
-
-## ⭐ Star History
-
-If this project helped you, consider giving it a star! ⭐
-
----
-
-**Built with ❤️ and AI**
