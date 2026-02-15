@@ -131,26 +131,48 @@ ai-video-generator/
 ---
 
 ## 📊 Pipeline Stages
-```
-Input Topic
-    ↓
-1. Generate Script (Gemini) → script.json
-    ↓
-2. Generate Voiceover (Edge TTS) → voiceover.mp3
-    ↓
-3. Fetch Visuals (Pexels) → video_1.mp4, video_2.mp4, video_3.mp4
-    ↓
-4. Create Video (MoviePy) → final_video.mp4
-    ↓
-5. Generate Thumbnail (AI + Pexels) → thumbnail.jpg
-    ↓
-6. Generate SEO (Gemini) → seo_metadata.json
-    ↓
-7. Generate Subtitles → subtitles.srt
-    ↓
-8. Prepare Upload Instructions → YOUTUBE_UPLOAD_INSTRUCTIONS.txt
-    ↓
-Output: Complete YouTube Video Package
+
+```mermaid
+flowchart TD
+    Start([Input Topic]) --> Step1
+    
+    Step1[1. Generate Script<br/>Gemini 2.0 Flash] --> Output1[📄 script.json]
+    Output1 --> Step2
+    
+    Step2[2. Generate Voiceover<br/>Edge TTS] --> Output2[🎙️ voiceover.mp3]
+    Output2 --> Step3
+    
+    Step3[3. Fetch Visuals<br/>Pexels API] --> Output3[🎬 video_1.mp4<br/>🎬 video_2.mp4<br/>🎬 video_3.mp4]
+    Output3 --> Step4
+    
+    Step4[4. Create Video<br/>MoviePy] --> Output4[🎥 final_video.mp4]
+    Output4 --> Step5
+    
+    Step5[5. Generate Thumbnail<br/>AI + Pexels] --> Output5[🖼️ thumbnail.jpg]
+    Output5 --> Step6
+    
+    Step6[6. Generate SEO<br/>Gemini] --> Output6[🔍 seo_metadata.json]
+    Output6 --> Step7
+    
+    Step7[7. Generate Subtitles<br/>Script-based] --> Output7[💬 subtitles.srt]
+    Output7 --> Step8
+    
+    Step8[8. Prepare Upload<br/>Instructions] --> Output8[📤 YOUTUBE_UPLOAD_INSTRUCTIONS.txt]
+    Output8 --> End
+    
+    End([✅ Complete YouTube<br/>Video Package])
+    
+    style Start fill:#4CAF50,color:#fff
+    style End fill:#FF9800,color:#fff
+    style Step1 fill:#2196F3,color:#fff
+    style Step2 fill:#2196F3,color:#fff
+    style Step3 fill:#2196F3,color:#fff
+    style Step4 fill:#2196F3,color:#fff
+    style Step5 fill:#9C27B0,color:#fff
+    style Step6 fill:#9C27B0,color:#fff
+    style Step7 fill:#9C27B0,color:#fff
+    style Step8 fill:#9C27B0,color:#fff
+    style Output4 fill:#FF5722,color:#fff,stroke:#B71C1C,stroke-width:3px
 ```
 
 ---
@@ -301,6 +323,7 @@ Created by Bhaskar Rana
 
 - GitHub: @blackstag2k(https://github.com/yourusername)
 - Email: ranaji2k@gmail.com
+
 
 
 
