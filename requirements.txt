@@ -1,0 +1,23 @@
+# Core AI & API
+google-genai>=0.8.0
+
+# Text-to-Speech
+edge-tts
+
+# Video Processing
+moviepy==1.0.3
+imageio==2.31.1
+imageio-ffmpeg
+
+# Image Processing
+Pillow==9.5.0
+
+# HTTP Requests
+requests
+
+# Audio Processing (for subtitles)
+SpeechRecognition
+pydub
+
+# Utilities
+python-dotenv
