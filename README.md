@@ -79,7 +79,7 @@ Wait 3-5 minutes, and your complete video package will be in the `output/` folde
 ---
 
 ## 📁 Project Structure
-```mermaid
+```
 graph TD
     A[ai-video-generator/] --> B[main.py]
     A --> C[requirements.txt]
@@ -311,4 +311,5 @@ Created by Bhaskar Rana
 
 - GitHub: @blackstag2k(https://github.com/yourusername)
 - Email: ranaji2k@gmail.com
+
 
