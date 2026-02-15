@@ -44,7 +44,7 @@ Generate complete, YouTube-ready videos with script, voiceover, visuals, thumbna
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ai-video-generator.git
+git clone https://github.com/blackstag2k/AI-YouTube-Video-Generation.git
 cd ai-video-generator
 
 # Create virtual environment
@@ -323,6 +323,7 @@ Created by Bhaskar Rana
 
 - GitHub: @blackstag2k(https://github.com/yourusername)
 - Email: ranaji2k@gmail.com
+
 
 
 
