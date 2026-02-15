@@ -79,39 +79,36 @@ Wait 3-5 minutes, and your complete video package will be in the `output/` folde
 ---
 
 ## 📁 Project Structure
-```graph TD
-    A[ai-video-generator/] --> B[main.py]
-    A --> C[requirements.txt]
-    A --> D[PROMPTS.md]
-    A --> E[README.md]
-    A --> F[.gitignore]
-    A --> G[output/]
+
+```mermaid
+graph TB
+    Root[ai-video-generator]
     
-    G --> H[script.json]
-    G --> I[script.txt]
-    G --> J[voiceover.mp3]
-    G --> K[final_video.mp4]
-    G --> L[thumbnail.jpg]
-    G --> M[subtitles.srt]
-    G --> N[seo_metadata.json]
-    G --> O[voice_metadata.json]
-    G --> P[visuals_metadata.json]
-    G --> Q[video_metadata.json]
-    G --> R[subtitles_metadata.json]
-    G --> S[youtube_upload_guide.json]
-    G --> T[YOUTUBE_UPLOAD_INSTRUCTIONS.txt]
-    G --> U[assets/]
+    Root --> main[main.py - All-in-one pipeline]
+    Root --> req[requirements.txt]
+    Root --> prompts[PROMPTS.md]
+    Root --> readme[README.md]
+    Root --> git[.gitignore]
+    Root --> Output[output/]
     
-    U --> V[video_1.mp4]
-    U --> W[video_2.mp4]
-    U --> X[video_3.mp4]
+    Output --> Script[script.json]
+    Output --> Voice[voiceover.mp3]
+    Output --> Video[final_video.mp4]
+    Output --> Thumb[thumbnail.jpg]
+    Output --> Subs[subtitles.srt]
+    Output --> SEO[seo_metadata.json]
+    Output --> Guide[YOUTUBE_UPLOAD_INSTRUCTIONS.txt]
+    Output --> Assets[assets/]
     
-    style A fill:#e1f5ff
-    style B fill:#fff59d
-    style G fill:#c8e6c9
-    style K fill:#ff9800,color:#fff
-    style L fill:#ff9800,color:#fff
-    style M fill:#ff9800,color:#fff
+    Assets --> V1[video_1.mp4]
+    Assets --> V2[video_2.mp4]
+    Assets --> V3[video_3.mp4]
+    
+    style Root fill:#2196F3,color:#fff
+    style main fill:#FFC107
+    style Video fill:#FF5722,color:#fff
+    style Output fill:#4CAF50,color:#fff
+    style Assets fill:#03A9F4,color:#fff
 ```
 
 ---
@@ -310,6 +307,7 @@ Created by Bhaskar Rana
 
 - GitHub: @blackstag2k(https://github.com/yourusername)
 - Email: ranaji2k@gmail.com
+
 
 
 
