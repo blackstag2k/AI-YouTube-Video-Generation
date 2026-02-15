@@ -79,36 +79,30 @@ Wait 3-5 minutes, and your complete video package will be in the `output/` folde
 ---
 
 ## 📁 Project Structure
-
-```mermaid
-graph TB
-    Root[ai-video-generator]
-    
-    Root --> main[main.py - All-in-one pipeline]
-    Root --> req[requirements.txt]
-    Root --> prompts[PROMPTS.md]
-    Root --> readme[README.md]
-    Root --> git[.gitignore]
-    Root --> Output[output/]
-    
-    Output --> Script[script.json]
-    Output --> Voice[voiceover.mp3]
-    Output --> Video[final_video.mp4]
-    Output --> Thumb[thumbnail.jpg]
-    Output --> Subs[subtitles.srt]
-    Output --> SEO[seo_metadata.json]
-    Output --> Guide[YOUTUBE_UPLOAD_INSTRUCTIONS.txt]
-    Output --> Assets[assets/]
-    
-    Assets --> V1[video_1.mp4]
-    Assets --> V2[video_2.mp4]
-    Assets --> V3[video_3.mp4]
-    
-    style Root fill:#2196F3,color:#fff
-    style main fill:#FFC107
-    style Video fill:#FF5722,color:#fff
-    style Output fill:#4CAF50,color:#fff
-    style Assets fill:#03A9F4,color:#fff
+```
+ai-video-generator/
+├── main.py                          # ⭐ All-in-one pipeline script
+├── requirements.txt                 # Python dependencies
+├── PROMPTS.md                       # All AI prompts used
+├── README.md                        # This file
+├── .gitignore                       # Git ignore rules
+└── output/                          # Generated files (created on first run)
+    ├── script.json                  # Generated script
+    ├── script.txt                   # Plain text script
+    ├── voiceover.mp3                # AI voiceover
+    ├── final_video.mp4              # ⭐ Final video (main deliverable)
+    ├── thumbnail.jpg                # YouTube thumbnail
+    ├── subtitles.srt                # Subtitle file
+    ├── seo_metadata.json            # SEO data (title, description, tags)
+    ├── voice_metadata.json          # Voice generation metadata
+    ├── visuals_metadata.json        # Downloaded videos metadata
+    ├── video_metadata.json          # Final video metadata
+    ├── youtube_upload_guide.json    # Upload data
+    ├── YOUTUBE_UPLOAD_INSTRUCTIONS.txt  # Step-by-step upload guide
+    └── assets/
+        ├── video_1.mp4              # Stock footage clip 1
+        ├── video_2.mp4              # Stock footage clip 2
+        └── video_3.mp4              # Stock footage clip 3
 ```
 
 ---
@@ -307,6 +301,7 @@ Created by Bhaskar Rana
 
 - GitHub: @blackstag2k(https://github.com/yourusername)
 - Email: ranaji2k@gmail.com
+
 
 
 
